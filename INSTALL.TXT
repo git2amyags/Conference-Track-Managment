@@ -1,0 +1,35 @@
+There are three models being used to resolved this problem which are listed below:
+
+1: Presenter -> The person who will be presenting the talk
+2: Talk -> Information about the session/talk to be scheduled on track
+3: Track -> To schedule all the talk on track
+
+I have used following sample talks to validate the results which can be change under Talk->set_list_of_talks:
+
+self.new("Amit","test@gl.com","Writing Fast Tests Against Enterprise Rails",60)
+self.new("Amit","test@gl.com","Overdoing it in Python",45)
+self.new("Amit","test@gl.com","Lua for the Masses",30)
+self.new("Amit","test@gl.com","Ruby Errors from Mismatched Gem Versions",45)
+self.new("Amit","test@gl.com","Common Ruby Errors",45)
+self.new("Amit","test@gl.com","Rails for Python Developers","lightning")
+self.new("Amit","test@gl.com","Communicating Over Distance",60)
+self.new("Amit","test@gl.com","Accounting-Driven Development",45)
+self.new("Amit","test@gl.com","Woah",30)
+self.new("Amit","test@gl.com","Sit Down and Write",30)
+self.new("Amit","test@gl.com","Pair Programming vs Noise",45)
+self.new("Amit","test@gl.com","Rails Magic",60)
+self.new("Amit","test@gl.com","Ruby on Rails: Why We Should Move On",60)
+self.new("Amit","test@gl.com","Clojure Ate Scala (on my project)",45)
+self.new("Amit","test@gl.com","Programming in the Boondocks of Seattle",30)
+self.new("Amit","test@gl.com","Ruby vs. Clojure for Back-End Development",30)
+self.new("Amit","test@gl.com","Ruby on Rails Legacy App Maintenance",60)
+self.new("Amit","test@gl.com","A World Without HackerNews",30)
+self.new("Amit","test@gl.com","User Interface CSS in Rails Apps",30)
+
+To get the list of tracks in schedule to above talks, just need the following command on rails console (irb):
+Talk.get_all_talks_in_tracks
+
+
+Thats All!
+
+Thanks
